@@ -1,0 +1,58 @@
+{
+  "allProductsList": [
+    {
+      "productName": "potato",
+      "category": "vegitable",
+      "freshness": "Brand New",
+      "price": 120,
+      "comment": "This is fresh potato",
+      "date": "2023-09-30T18:30:00.000Z",
+      "id": 5
+    },
+    {
+      "productName": "coconut",
+      "category": "fruits",
+      "freshness": "Brand New",
+      "price": 120,
+      "comment": "Import from Jammu &Kashmir",
+      "date": "2023-01-07T18:30:00.000Z",
+      "id": 6
+    },
+    {
+      "productName": "mango",
+      "category": "fruits",
+      "freshness": "Brand New",
+      "price": 320,
+      "comment": "this fress and new",
+      "date": "2023-07-31T18:30:00.000Z",
+      "id": 7
+    },
+    {
+      "productName": "Apple",
+      "category": "fruits",
+      "freshness": "Brand New",
+      "price": 120,
+      "comment": "import Jammu",
+      "date": "+020233-09-30T18:30:00.000Z",
+      "id": 8
+    },
+    {
+      "productName": "zdff",
+      "category": "electronics",
+      "freshness": "Brand New",
+      "price": 1334,
+      "comment": "xcvf",
+      "date": "2023-01-24T18:30:00.000Z",
+      "id": 9
+    },
+    {
+      "productName": "vikrant",
+      "category": "fruits",
+      "freshness": "Brand New",
+      "price": 123,
+      "comment": "sadfasf",
+      "date": "2023-01-26T18:30:00.000Z",
+      "id": 10
+    }
+  ]
+}

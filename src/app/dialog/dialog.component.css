@@ -1,0 +1,26 @@
+mat-form-field{
+    width:90%;
+    margin-left: 3%;
+    margin-top: 3%;
+    
+}
+mat-dialog-title h1{
+    background-color: aqua;
+    position:fixed
+}
+
+mat-radio-group {
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0;
+    align-items: flex-start;
+    margin-left: 9%;
+  }
+  
+  mat-radio-button {
+    margin: 5px;
+    margin-left: 9%;
+  }
+ .mat-Action{
+  padding: 40px 15px 0px 0px
+  }

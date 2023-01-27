@@ -1,0 +1,53 @@
+<h1 mat-dialog-title  >ADD PRODUCTS</h1>
+<div mat-dialog-content>
+<form [formGroup]="productForm">
+    <mat-form-field appearance="outline">
+        <mat-label outline for>Product Name</mat-label>
+        <input formControlName="productName" matInput placeholder="enter products Name"/>
+    
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+        <mat-label outline for>Product Category</mat-label>
+        <mat-select placeholder="Category" formControlName="category">
+            <mat-option value="fruits">Fruits</mat-option>
+            <mat-option value="vegitable">vegitable</mat-option>
+            <mat-option value="electronics">electronics</mat-option>
+     </mat-select>
+    </mat-form-field>
+    
+    <mat-form-field class="example-full-width" appearance="outline">
+        <mat-label>Choose a date</mat-label>
+        <input formControlName="date" matInput [matDatepicker]="picker">
+    
+        <mat-datepicker-toggle matIconSuffix [for]="picker">
+          <mat-icon matDatepickerToggleIcon>keyboard_arrow_down</mat-icon>
+        </mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+      
+    <label for=""><h1>Product Freshness</h1></label>
+    <mat-radio-group formControlName="freshness">
+        <mat-radio-button *ngFor="let fresh of freshnessList" [value]="fresh">
+    {{fresh}}
+        </mat-radio-button>
+    </mat-radio-group>
+       
+    <mat-form-field appearance="outline">
+        <mat-label outline for>Price</mat-label>
+        <input formControlName="price" matInput type="number" placeholder="enter products Price"/>
+    
+    </mat-form-field>
+    
+    <mat-form-field appearance="outline">
+        <mat-label outline for>Comment</mat-label>
+        <textarea formControlName="comment" matInput placeholder="Write Comment"></textarea>
+    
+    </mat-form-field>
+</form>
+</div>
+<div mat-dialog-action [align]="'end'" class="mat-Action">
+    <button mat-raised-button color="warn" mat-dialog-close>Close</button>
+    <button mat-raised-button style="margin-left: 3%;" color="primary" mat-dialog-clone (click)="submitdata()">{{actionBtn}}</button>
+    
+
+</div>
